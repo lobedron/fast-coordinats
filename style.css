@@ -1,0 +1,14 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #050505; font-family: sans-serif; min-height: 100vh; display: flex; justify-content: center; align-items: center; color: #fff; transition: 0.6s; }
+body.theme-normal { background: linear-gradient(90deg, #040d1a 0%, #050505 50%, #1a0508 100%); }
+body.theme-swapped { background: linear-gradient(90deg, #1a0508 0%, #050505 50%, #040d1a 100%); }
+.app { max-width: 960px; width: 100%; padding: 2rem; }
+.exchange { display: flex; align-items: center; gap: 1.5rem; }
+.panel { flex: 1; background: rgba(15, 15, 20, 0.6); backdrop-filter: blur(20px); border-radius: 24px; padding: 2.2rem; border: 1px solid rgba(255, 255, 255, 0.05); }
+.dimension-header { display: flex; justify-content: space-between; margin-bottom: 2rem; }
+.coord-line { display: flex; gap: 0.8rem; }
+.coord { flex: 1; text-align: center; }
+.coord input { width: 100%; background: rgba(0,0,0,0.3); border: 1px solid #444; border-radius: 10px; padding: 1rem; color: #fff; text-align: center; font-size: 1.2rem; }
+.swap-btn { width: 50px; height: 50px; border-radius: 50%; cursor: pointer; border: none; background: #222; color: #fff; }
+.toast { position: fixed; bottom: 40px; padding: 10px 20px; background: #fff; color: #000; border-radius: 12px; opacity: 0; transition: 0.3s; }
+.toast.show { opacity: 1; }

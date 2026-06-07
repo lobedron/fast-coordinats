@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Swap v1.3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-normal">
+<div class="app">
+    <div class="exchange">
+        <div class="panel theme-overworld" id="panelLeft">
+            <div class="dimension-header">
+                <div class="dimension-name" id="leftDimName">OVERWORLD</div>
+                <div class="panel-actions">
+                    <button class="icon-btn" onclick="triggerPaste(true)" title="Вставить">📋</button>
+                    <button class="icon-btn" onclick="copyCoords(true)" title="Скопировать">📄</button>
+                </div>
+            </div>
+            <div class="coord-line">
+                <div class="coord"><label>X</label><input type="text" id="leftX" value="0"></div>
+                <div class="coord"><label>Y</label><input type="text" id="leftY" value="0"></div>
+                <div class="coord"><label>Z</label><input type="text" id="leftZ" value="0"></div>
+            </div>
+        </div>
+
+        <div class="swap-button">
+            <button class="swap-btn" id="swapBtn">⇄</button>
+        </div>
+
+        <div class="panel theme-nether" id="panelRight">
+            <div class="dimension-header">
+                <div class="dimension-name" id="rightDimName">NETHER</div>
+                <div class="panel-actions">
+                    <button class="icon-btn" onclick="triggerPaste(false)" title="Вставить">📋</button>
+                    <button class="icon-btn" onclick="copyCoords(false)" title="Скопировать">📄</button>
+                </div>
+            </div>
+            <div class="coord-line">
+                <div class="coord"><label>X</label><input type="text" id="rightX" value="0"></div>
+                <div class="coord"><label>Y</label><input type="text" id="rightY" value="0"></div>
+                <div class="coord"><label>Z</label><input type="text" id="rightZ" value="0"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="toast" class="toast">✓ Готово</div>
+<script src="script.js"></script>
+</body>
+</html>
